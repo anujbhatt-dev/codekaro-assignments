@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms and Tables</title>
+</head>
+<body>
+    <h1>Different Fruits</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Mango</td>
+            <td>yellow</td>
+            <td>$12</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>green and yellow</td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>red</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>orange</td>
+            <td>$8</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h3>Places to visit in Uttarakhand</h3>
+    <ul>
+        <li>mussoorie</li>
+        <li>nainital</li>
+        <li>auli</li>
+        <li>badrinath</li>
+        <li>kedarnath</li>
+    </ul>
+
+    <h3>Steps to make green tea</h3>
+    <ol>
+        <li>Boil Water</li>
+        <li>Add tea bag</li>
+        <li>Enjoy the tea</li>
+    </ol>
+    <br><br>
+
+    <h3>Fill the form below</h3>
+    <form style="padding: 1rem; background-color: gainsboro; display: inline-block; border-radius: 10px;" action="">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" minlength="3" maxlength="50" placeholder="enter your name" required><br>
+        </div><br>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="enter your email" required><br>
+        </div><br>
+
+        <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="other" value="other" required>
+            <label for="other">other</label>
+        </div><br>
+
+        <select style="width: 100%; padding: 1px;" name="age-group" id="age-group" required>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+        </select><br>
+
+
+        <div>
+            <input type="checkbox" name="newsletter" id="newsletter" value="on" required>
+            <label for="newsletter">I hereby opt for newsletter</label>
+        </div><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
