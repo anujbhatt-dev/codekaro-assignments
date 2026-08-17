@@ -18,12 +18,12 @@
 </head>
 <body class="bg-zinc-950 text-white relative overflow-x-hidden">
     <!-- nav -->
-     <nav class="flex justify-between items-center px-6 sm:px-40 py-6 absolute top-0 left-0 right-0 z-10">
+     <nav class="absolute inset-x-0 top-0 z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
         <div class="">
-            <img class="h-6 sm:h-10" src="./assets/svg/netflix-wordmark.svg" alt="">
+            <img class="h-6 w-auto sm:h-9 lg:h-10" src="./assets/svg/netflix-wordmark.svg" alt="Netflix">
         </div>
-        <div class="flex gap-4 justify-center items-center">
-            <button class="border border-neutral-500 bg-neutral-900/60 flex justify-center items-center gap-2 transition-all duration-150 py-2 sm:py-1 px-4 rounded font-semibold">
+        <div class="flex items-center justify-center gap-2 sm:gap-4">
+            <button class="flex items-center justify-center gap-2 rounded border border-neutral-500 bg-neutral-900/60 px-2 py-1.5 font-semibold transition-all duration-150 sm:px-4">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-translate" viewBox="0 0 16 16">
                     <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
@@ -44,22 +44,22 @@
      </nav>
 
      <!-- hero section -->
-    <section class="sm:h-9/10 relative h-[70vh]">
-        <img src="./assets/images/netflix-hero-collage.jpg" alt="" class="h-full w-auto sm:h-auto sm:w-full object-cover">
-        <div class="inset-0 absolute gradient" />
-        <div class="flex flex-col absolute inset-0 justify-center items-center">
-            <h1 class="font-bold text-4xl sm:text-6xl px-6 sm:px-0 sm:w-2/5 text-center sm:leading-20">
+    <section class="relative min-h-[650px] h-[100svh] max-h-[900px]">
+        <img src="./assets/images/netflix-hero-collage.jpg" alt="" class="h-full w-full object-cover">
+        <div class="absolute inset-0 gradient"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 pt-16 sm:px-6">
+            <h1 class="max-w-3xl text-center text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
                 Unlimited movies, shows, and more
             </h1>
-            <p class="font-semibold text-lg sm:text-2xl px-6 sm:px-0 sm:w-2/5 text-center mb-8 mt-6">
+            <p class="mt-5 mb-6 max-w-2xl text-center text-lg font-semibold sm:text-xl lg:text-2xl">
                 Starts at ₹149. Cancel at any time.
             </p>
-            <p class="text-sm sm:text-lg px-6 sm:px-0 sm:w-3/5 text-center mb-4 font-light">
+            <p class="mb-4 max-w-2xl text-center text-sm font-light sm:text-base lg:text-lg">
                 Ready to watch? Enter your email to create or restart your membership.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <input type="text" placeholder="Enter email" class="py-4 px-4 border rounded-lg border-neutral-400 bg-black/50 placeholder:text-neutral-400 placeholder:font-semibold text-white grow inline-block w-sm">
-                <button class="flex justify-center items-center gap-4 bg-red-600 hover:bg-red-700 transition-all duration-150 py-3 px-6 rounded border border-transparent font-semibold text-2xl">
+            <div class="flex w-full max-w-2xl flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+                <input type="email" placeholder="Enter email" class="min-w-0 w-full rounded-lg border border-neutral-400 bg-black/50 px-4 py-4 text-white placeholder:font-semibold placeholder:text-neutral-400 sm:flex-1">
+                <button class="flex w-fit self-center shrink-0 items-center justify-center gap-3 rounded border border-transparent bg-red-600 px-5 py-3 text-lg font-semibold transition-all duration-150 hover:bg-red-700 sm:self-auto sm:text-xl lg:text-2xl">
                     <span>Get Started</span>
                     <img src="./assets/svg/chevron-right.svg" alt="" class="h-full invert">
                 </button>
@@ -68,60 +68,60 @@
     </section>
 
     <!-- Trending section -->
-     <section class="px-6 sm:px-0 sm:w-6xl mx-auto">
+     <section class="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <h1 class="font-semibold text-xl sm:text-2xl my-6 mt-12">
             Trending Now
         </h1>
-        <div class="flex items-center gap-9 relative overflow-hidden px-4">
+        <div class="relative flex items-center gap-6 overflow-x-hidden px-4 py-3 sm:gap-10">
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/musafir-cafe.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/musafir-cafe.webp" alt="Musafir Cafe">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     1
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/gatta-kusthi.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/gatta-kusthi.webp" alt="Gatta Kusthi">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     2
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/bhoot-bangla.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/bhoot-bangla.webp" alt="Bhoot Bangla">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     3
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/blast.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/blast.webp" alt="Blast">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     4
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/ikka.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/ikka.webp" alt="Ikka">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     5
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/lock-upp.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/lock-upp.webp" alt="Lock Upp">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     6
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/main-vaapas-aaunga.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/main-vaapas-aaunga.webp" alt="Main Vaapas Aaunga">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     7
                 </p>
             </div>
             <div class="relative shrink-0">
-                <img class="rounded-2xl w-24 sm:w-48 h-auto " src="./assets/images/peddi.webp" class="" alt="">
+                <img class="h-auto w-28 rounded-xl sm:w-40 lg:w-48 lg:rounded-2xl" src="./assets/images/peddi.webp" alt="Peddi">
                 <p class="absolute left-0 bottom-10 sm:bottom-16 -translate-x-1/3 text-[5rem] sm:text-[7rem] [-webkit-text-stroke:2px_#D8D8D8] text-black font-extrabold leading-0">
                     8
                 </p>
             </div>
-            <div class="absolute right-0 top-1/2 -translate-y-1/2 h-1/3 w-6 rounded-lg flex items-center justify-center bg-zinc-900 p-1">
+            <div class="absolute -ml-2 right-0 top-1/2 flex h-20 w-7 shrink-0 -translate-y-1/2 items-center justify-center rounded-lg bg-zinc-900 p-1 sm:h-28">
                 <img src="./assets/svg/chevron-right.svg" class="w-full h-auto invert" alt="">
             </div>
         </div>
@@ -129,12 +129,12 @@
      </section>
 
      <!-- Reason Section -->
-      <section class="px-6 sm:px-0 sm:w-6xl mx-auto">
+      <section class="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <h1 class="font-semibold text-xl sm:text-2xl my-6 mt-16">
            More reasons to join
         </h1>
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:h-80">
-            <div class="rounded-xl p-6 relative card-gradient h-50 sm:h-full">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div class="relative min-h-52 rounded-xl p-6 card-gradient lg:min-h-80">
                 <h2 class="font-semibold text-xl sm:text-2xl mb-3">
                     Enjoy on your TV
                 </h2>
@@ -143,7 +143,7 @@
                 </p>
                 <img class="h-20 w-auto absolute bottom-4 right-4" src="./assets/svg/television-icon.svg" alt="">
             </div>
-            <div class="rounded-xl p-6 relative card-gradient h-50 sm:h-full">
+            <div class="relative min-h-52 rounded-xl p-6 card-gradient lg:min-h-80">
                 <h2 class="font-semibold text-xl sm:text-2xl mb-3">
                     Download your shows to watch offline
                 </h2>
@@ -152,7 +152,7 @@
                 </p>
                 <img class="h-20 w-auto absolute bottom-4 right-4" src="./assets/svg/download-icon.svg" alt="">
             </div>
-            <div class="rounded-xl p-6 relative card-gradient h-50 sm:h-full">
+            <div class="relative min-h-52 rounded-xl p-6 card-gradient lg:min-h-80">
                 <h2 class="font-semibold text-xl sm:text-2xl mb-3">
                     Watch everywhere
                 </h2>
@@ -161,7 +161,7 @@
                 </p>
                 <img class="h-20 w-auto absolute bottom-4 right-4" src="./assets/svg/telescope-icon.svg" alt="">
             </div>
-            <div class="rounded-xl p-6 relative card-gradient h-50 sm:h-full">
+            <div class="relative min-h-52 rounded-xl p-6 card-gradient lg:min-h-80">
                 <h2 class="font-semibold text-xl sm:text-2xl mb-3">
                     Create profiles for kids
                 </h2>
@@ -175,51 +175,51 @@
 
 
       <!-- FAQs -->
-       <section class="px-6 sm:px-0 sm:w-6xl mx-auto">
+       <section class="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <h1 class="font-semibold text-xl sm:text-2xl my-6 mt-16">
            Frequently Asked Questions
         </h1>
         <div>
-            <div class="flex justify-between items-center mb-4 py-6 px-6 bg-neutral-700 hover:bg-neutral-600">
+            <div class="mb-3 flex items-center justify-between gap-4 bg-neutral-700 px-5 py-5 hover:bg-neutral-600 sm:mb-4 sm:px-6 sm:py-6">
                 <p class="text-xl sm:text-2xl">What is netflix?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg h-7 w-7 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
                 </svg>
             </div>
-            <div class="flex justify-between items-center mb-4 py-6 px-6 bg-neutral-700 hover:bg-neutral-600">
+            <div class="mb-3 flex items-center justify-between gap-4 bg-neutral-700 px-5 py-5 hover:bg-neutral-600 sm:mb-4 sm:px-6 sm:py-6">
                 <p class="text-xl sm:text-2xl">How much does netflix cost?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg h-7 w-7 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
                 </svg>
             </div>
-            <div class="flex justify-between items-center mb-4 py-6 px-6 bg-neutral-700 hover:bg-neutral-600">
+            <div class="mb-3 flex items-center justify-between gap-4 bg-neutral-700 px-5 py-5 hover:bg-neutral-600 sm:mb-4 sm:px-6 sm:py-6">
                 <p class="text-xl sm:text-2xl">Where caan i watch?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg h-7 w-7 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
                 </svg>
             </div>
-            <div class="flex justify-between items-center mb-4 py-6 px-6 bg-neutral-700 hover:bg-neutral-600">
+            <div class="mb-3 flex items-center justify-between gap-4 bg-neutral-700 px-5 py-5 hover:bg-neutral-600 sm:mb-4 sm:px-6 sm:py-6">
                 <p class="text-xl sm:text-2xl">How do i cancel?</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-plus-lg h-7 w-7 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
                 </svg>
             </div>
         </div>
       </section>
 
-     <footer class="px-6 sm:px-0 sm:w-6xl sm:mx-auto mt-20 pb-20">
-            <p class="text-lg text-left sm:text-center mb-4 font-light">
+     <footer class="mx-auto mt-20 w-full max-w-6xl px-6 pb-20 lg:px-8">
+            <p class="mb-4 text-left text-base font-light sm:text-center sm:text-lg">
                 Ready to watch? Enter your email to create or restart your membership.
             </p>
-            <div class="flex  flex-col sm:flex-row justify-start sm:justify-center sm:items-center gap-4 mx-auto sm:mx-40">
-                <input type="text" placeholder="Enter email" class="py-4 px-4 border rounded-lg border-neutral-400 bg-black/50 placeholder:text-neutral-400 placeholder:font-semibold text-white grow inline-block w-full sm:w-sm">
-                <button class="flex justify-center items-center gap-4 bg-red-600 hover:bg-red-700 transition-all duration-150 py-3 px-6 rounded border border-transparent font-semibold text-2xl">
+            <div class="mx-auto flex w-full max-w-2xl flex-col justify-start gap-3 sm:flex-row sm:items-center sm:justify-center">
+                <input type="email" placeholder="Enter email" class="min-w-0 w-full rounded-lg border border-neutral-400 bg-black/50 px-4 py-4 text-white placeholder:font-semibold placeholder:text-neutral-400 sm:flex-1">
+                <button class="flex w-fit self-start shrink-0 items-center justify-center gap-3 rounded border border-transparent bg-red-600 px-5 py-3 text-lg font-semibold transition-all duration-150 hover:bg-red-700 sm:self-auto sm:text-xl lg:text-2xl">
                     <span>Get Started</span>
                     <img src="./assets/svg/chevron-right.svg" alt="" class="h-full invert">
                 </button>
             </div>
             <p class="text-[16px] text-white/80 mt-20">Questions? Call <a class="underline" href="tel:">000-800-919-1743</a></p>
-            <div class="text-sm text-white/80 mt-10 gap-5 grid grid-cols-1 sm:grid-cols-4">
+            <div class="mt-10 grid grid-cols-1 gap-5 text-sm text-white/80 sm:grid-cols-2 lg:grid-cols-4">
                 <a href="" class="active:text-red-600 underline font-semibold ">FAQs</a>
                 <a href="" class="active:text-red-600 underline font-semibold ">Help Centre</a>
                 <a href="" class="active:text-red-600 underline font-semibold ">Account</a>
