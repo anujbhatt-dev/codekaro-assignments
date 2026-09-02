@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body{
+ @apply bg-zinc-900 text-white;
+}
+
+
+.blink{
+  animation: blink 1s infinite alternate linear;
+}
+
+@keyframes blink {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.5;
+  }
+}
