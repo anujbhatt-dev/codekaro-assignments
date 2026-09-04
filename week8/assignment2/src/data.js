@@ -239,4 +239,5 @@ export const touristPlaces = [
     ratings: 4.7,
     price: 8500
   }
+  
 ];
