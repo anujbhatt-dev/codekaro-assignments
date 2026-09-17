@@ -1,0 +1,2 @@
+timestamp: 1789644166435 | urlPath: /search?name=John&age=25 | urlQuery: {"name":"John","age":"25"}
+timestamp: 1789644201463 | urlPath: /search?name=Anuj+Bhatt&age=24 | urlQuery: {"name":"Anuj Bhatt","age":"24"}
