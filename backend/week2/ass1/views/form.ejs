@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body >
+    
+        <form method="post" action="/submit" class="max-w-sm mx-auto mt-20">
+        <h1 class="my-4 font-semibold text-3xl uppercase">Submit form details</h1>
+        <div class="mb-5">
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Your full name</label>
+            <input name="fullName" type="text" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="e.g, John Doe, etc " required />
+        </div>
+        <div class="mb-5">
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Your email</label>
+            <input name="email" type="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="name@mail.com" required />
+        </div>
+        <div class="mb-5">
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Your age</label>
+            <input name="age" type="number" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="enter your age" required />
+        </div>
+        <div class="mb-5">
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Your favourite color</label>
+            <input name="color" type="color"  placeholder="your color" required />
+        </div>
+        <button type="submit" class="text-white bg-black box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Submit</button>
+        </form>
+
+</body>
+</html>
