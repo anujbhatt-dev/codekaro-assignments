@@ -1,0 +1,4 @@
+method: DELETE url: /api/v1/users/6ad5e651dd82963524898c37 body: undefined 
+method: POST url: /api/v1/users/ body: {"name":"anuj","email":"anuj@gmail.com"} 
+method: PATCH url: /api/v1/users/6ad5e72092ba462ff0f8b323 body: {"name":"Anuj Bhatt"} 
+method: DELETE url: /api/v1/users/6ad5e72092ba462ff0f8b323 body: undefined 
